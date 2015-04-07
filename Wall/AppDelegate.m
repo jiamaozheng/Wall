@@ -8,15 +8,20 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+#define appID @"XZGzGJI3JMhYc0q815k0mZbmorpHsoYjIBb2QypQ"
+#define clKey @"OkdO574xkXgFKi5xnwgDdVkpiRluGcdIpP417kb8"
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //Register our parse app
+    [Parse setApplicationId:appID
+                  clientKey:clKey];
     return YES;
 }
 
